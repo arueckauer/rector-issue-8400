@@ -1,0 +1,33 @@
+{
+    "name": "arueckauer/rector-issue-8400",
+    "description": "Minimal code and config to cause rector issue on Windows",
+    "license": "BSD-3-Clause",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Andi Rückauer",
+            "email": "arueckauer@gmail.com",
+            "homepage": "https://arueckauer.github.io/"
+        }
+    ],
+    "homepage": "https://github.com/arueckauer/rector-issue-8400",
+    "require": {
+        "php": "~8.2.0"
+    },
+    "require-dev": {
+        "rector/rector": "^0.19.0"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "config": {
+        "audit": {
+            "abandoned": "report"
+        },
+        "sort-packages": true
+    }
+}
